@@ -1,0 +1,27 @@
+shutil is a library that allows us to use copy/move functions for file
+
+#Copy File
+
+shutil.copyfile('sourcepath','destinationpath') // The destinationpath needs to be a proper file, A dir won't work
+
+shutil.copy('sourcepath','filepath') // filepath can be a dir as well
+// This basically used copyfile internally 
+// If dir name is provided file is copied with same name, else with the file name provided  
+
+#Replace
+
+os.replace(sourcefilepath,destinationfilepath)
+os.replace(sourceDirPath,destinationDirPath)
+// File will move to destination with specified name
+
+#Remove
+
+os.remove(sourcefilepath)
+// You can't remove directory using this
+
+os.rmdir(sourceDirPath)
+// sourceDirPath should be a empty directory
+
+shutil.rmtree(sourceDirPath)
+// Deletes everthing inside the folder  
+

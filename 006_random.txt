@@ -1,0 +1,5 @@
+import random
+
+random.random() // generates float
+random.randint(a,b) // generated in range
+random.choices(sequence) // returns a random entry of sequence

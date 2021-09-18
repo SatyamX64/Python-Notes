@@ -1,0 +1,81 @@
+// File Operations
+
+import os
+
+path = "C:\\Users\\satya\\Music\\boy.txt"
+
+try:
+    if os.path.exists(path) and os.path.isfile(path):
+        with open(path) as file:
+            print(file.read())
+except OSError:
+    print("Idk,,something went wrong")
+finally:
+    print("This Ended alas")
+
+
+// We can perform basic operations like write,read,append without any import
+
+filename = "hello.txt" // or path of the file if not in same directory as main.py
+file = open(filename, "r") // r-read,w-write,a-append,r+ - read and write 
+for line in file:
+   print line
+
+-------------------------------------------------------------------------------------
+Read ()
+The read functions contains different methods, read(),readline() and readlines()
+
+
+read()		#return one big string      
+read(n)     #return first n characters
+readline()	#return one line at a time
+    readline will return the next line after every susequent call
+    readline(n) will not return the nth line, rather it will return the first n characters of whatever it was to return originally 
+readlines() #returns a list of lines
+
+// An Interesting Behaviour
+
+Let File : 
+First
+Second
+Third
+
+Code :
+
+path = "boy.txt"
+
+file = open(path, "r")
+print(file.readline(), end="") // First
+print(file.readlines()) // ['Second\n', 'Third\n']
+file.close()
+
+Code II:
+
+path = "boy.txt"
+
+file = open(path, "r")
+print(file.readlines()) // ['First\n', 'Second\n', 'Third\n']
+file.close()
+
+So some type of file pointer is at work, that moves to next line on each call to readline
+and readlines takes it to the last
+
+another way to read contents of file : 
+file = open(“testfile.txt”, “r”) 
+for line in file: 
+print line
+-------------------------------------------------------------------------------------
+Write ()
+This method writes a sequence of strings to the file.
+
+write ()	#Used to write a fixed sequence of characters to a file
+
+writelines()	#writelines can write a list of strings.
+
+-------------------------------------------------------------------------------------
+Append ()
+The append function is used to append to the file instead of overwriting it. To append to an existing file, simply open the file in append mode (“a”):
+
+-------------------------------------------------------------------------------------
+Close()
+When you’re done with a file, use close() to close it and free up any system resources taken up by the open file   

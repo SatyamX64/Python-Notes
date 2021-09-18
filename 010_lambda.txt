@@ -1,0 +1,21 @@
+Lamda functions are one-line functions
+
+lamda parameters : return expression
+
+
+eg:
+
+def double(x):
+    return x*2
+
+we can do it as
+
+double = lambda x : x*2
+
+print(double(5)) // 10
+
+
+some more eg:
+
+age_check = lambda age: if age >=18 True else False
+add lambda x,y,z : x+y+z

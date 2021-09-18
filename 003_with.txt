@@ -1,0 +1,10 @@
+with operation
+
+// This provides a much cleaner way to do everything with file
+// Kind of syntactical sugar for all that try/catch blocks
+
+with open(“hello.txt”) as f: 
+    data = f.readlines()
+    // or any other file operation
+
+// we don't need to close the file this way since "with" does it for us, as soon as its block of code is over

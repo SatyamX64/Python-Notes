@@ -1,0 +1,18 @@
+We can pass functions too
+
+eg:
+say = print
+say('hello') // hello
+
+print(print) // will return a memory address
+
+High Order Function -- They return a function and/or take a function as a argument      
+
+def divisor(x):
+    def dividend(y):
+        return y/x
+    return dividend // so returns the address of function
+
+
+divide = divisor(2) // divide is assigned the dividend function with x=2
+print(divide(10)) // 5

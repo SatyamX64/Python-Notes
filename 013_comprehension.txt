@@ -1,0 +1,27 @@
+a more elegant and neat way to initialize list
+
+general syntax for list comprehension
+
+1. list = [expression for  i in range(a,b)/iterable ]
+
+eg :
+squares = [i*i for i in range(1,9)]
+
+we can also use if statement
+
+2. passed = [i for i in studets if i >= 33]
+
+3. all_status = [i if i>= 33 else "Faile" for i in students]
+
+
+//////////////////////////////////
+similar for dictionary
+
+1.new_dict = {key: value*2 for (key,value)  in dict.items()}
+
+2.new_dict = {key: value for (key,value)  in dict.items() if value="sunny"}
+
+3.new_dict = {key: ("WARM" if value>=40 else "COLD") for (key,value)  in dict.items()}
+
+4.new_dict = {key: check_temp(value) for (key,value)  in dict.items()}
+    check_temp is a function that takes a value as parameter and return something

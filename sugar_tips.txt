@@ -1,0 +1,7 @@
+# Multiple Assignment 
+
+    name, age, rollno = "satyam", 34, 35
+    man = woman = helicopter = "gender"
+
+# type(var) gives that data_type
+# str(something) to convert to string

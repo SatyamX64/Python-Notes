@@ -1,0 +1,38 @@
+map(function,iterable)
+
+// returns a iterable with all elements returned from function
+// function recieve a value from original iterable and returns a new object aftre some operation
+// we can use lamda for function most times
+
+
+
+store = [('shirt',20.00),('oopen',30.00),('shon',25.00)]
+
+fun = lamda data : (data[0],data[1]*34)
+
+new_list = list(map(fun,store))
+
+
+////////////////////////////////////////
+
+filter function
+
+filter(fun,itr)
+
+same implementaiton, just that function now returs a bpol
+if bool that element in added in new list else not
+
+////////////////////////////////////////////////////////
+
+reduce function
+// similar to the function like fold in dart
+
+performs a function on iterable over and over until one value remains
+function takes 2 args
+
+# import functools
+
+lettters = ['h','e','l','l','o']
+word = functools.reduce(lambda x,y : x+y,letters)
+
+print(word) // hello

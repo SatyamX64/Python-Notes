@@ -1,0 +1,60 @@
+class Animal:
+    x = true
+
+    def eat(self):
+      print("animal")
+
+    
+class Prey:
+    x = false
+
+    def eat(self):
+      print("prey")
+
+
+class Rabbit(Prey,Animal):    // this is inheritance
+    x = true
+
+
+// The order matters too, since if there are overlaps. The First Parent will take Priority
+
+// For method chaining all methods should return self
+
+// __init__ function is the constructor
+
+
+// abstract class are like bunch of rules about how its child should be
+// a class is treated as abstracct only if it has one or more function or abstractmethod
+
+from ABC import  ABC,abstactmethod
+
+class Vehicle(ABC):
+
+    @abstract
+    def go():
+      pass
+
+
+class Car(Vehicle):
+
+    def go():
+    // defining this function becomes a necessity 
+
+
+// Duck Concept
+
+A Duck can walk and talk
+So anything that can walk and talk must be a duck
+
+// Practically it means, we can use a function for different type of classes, as long as they have the same common functions
+
+def fun(animal):
+  print(animal.talk())
+
+// Now we can use this function for both duck and chicken, since both have a talk method
+
+
+
+
+
+        

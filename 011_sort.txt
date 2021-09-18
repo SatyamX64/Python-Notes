@@ -1,0 +1,8 @@
+# sort = a member function of list
+# sorted = a function for iterable
+
+takes in a key argument
+
+// Suppose you have a list of tuples and you want to use the roll no in tuple for sorting
+// key takes in a function that recieves the object of iterable sequence and returns the field
+// since this is a one - line function, we generally use lamda for this

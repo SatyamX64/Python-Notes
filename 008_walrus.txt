@@ -1,0 +1,10 @@
+Walrus Operator :=
+
+// Can be used when we need the value of a equation in another expression
+
+eg :
+
+while food:=input("Enter Food : ") != 'quit':
+    print('You never typed quit')
+
+    

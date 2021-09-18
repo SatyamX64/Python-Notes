@@ -1,0 +1,36 @@
+// use help() to find help  
+// ctrl+alt+b to see implementaiton
+
+dic = {
+    'a' : 1,
+    'b' : 2,
+}
+
+for i in dic // i iterates over the keys
+for i in dic.keys()
+for i in dic.values()
+for i,j in dic.items()
+
+// Ctrl + Alt + L for auto-format   
+
+// Python does Call by Value normally
+
+def aok(a):
+    a = 10
+
+
+x = 5
+print(x) // 5
+aok(x)
+print(x) // 5
+
+
+// *args and **kargs
+
+def aok(**args):
+    print(len(args))
+    for i, j in args.items():
+        print("{} : {}".format(i, j))
+
+
+print(aok(boy='arun', girl='swatting'))

@@ -1,0 +1,34 @@
+Let there be a file called newFile.py
+
+def fun():
+    print('something')
+
+def fun2():
+    print('other')
+
+x = 6
+
+
+// Now to use the file from main.py
+
+1.
+
+import newFile as heh
+
+heh.fun()
+heh.fun2()
+print(heh.x)
+
+2.
+
+from newFile import fun,fun2,x
+
+fun()
+fun2()
+print(x)
+
+or just use
+from newFile import *
+// to import everthing
+
+// From is not suitable for bigger Projects, since it can creat ambiguity
